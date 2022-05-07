@@ -1,0 +1,45 @@
+body{
+  background: #fafafa;
+}
+.dino{
+  width: 60px;
+  height: 60px;
+  background-image: url(img/dino.png);
+  position: absolute;
+  bottom: 0;
+}
+
+.cactus{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 0;
+  background-image: url(img/cactus.png);
+}
+
+.game-over{
+  text-align: center;
+  color: #666666;
+  margin-top: 50px;
+  font-family: arial;
+}
+
+@keyframes slideright { /*criar animacao*/
+  from{
+    background-position: 70000%; /*desliza da direita para a esquerda.*/
+  }
+
+  to {
+    background-position: 0;
+  }
+}
+
+.background{
+  position: absolute;
+  bottom: 0;
+  background-image: url(img/background.png);
+  background-repeat: repeat-x; /*repetir no eixo x , ou seja, na horizontal*/
+  animation: slideright 60s infinite linear; /*tempo da animacao*/
+  width: 100%;
+  height: 200px;
+}
